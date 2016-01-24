@@ -1,4 +1,5 @@
 ul{
+	font-family:FZFengYaSongS-GB;
 	position:fixed;
 	margin:0px;
 	padding:0px 0px;
@@ -41,6 +42,7 @@ li{
 	z-index:-1;
 }
 div.guide{
+	font-family:FZFengYaSongS-GB;
 	margin:0 auto;
 	text-align:center;
 	border-top: 30px solid #fd7b01; 

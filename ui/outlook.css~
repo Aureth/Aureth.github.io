@@ -1,5 +1,11 @@
-@font-face {font-family:heading_CN; src: url('font/FZfengyasong.ttf');} 
-@font-face {font-family:text_CN; src: url('font/HYQiHei-35S.otf');} 
+@font-face{
+	font-family:FZFengYaSongS-GB; 
+	src:url('font/FZfengyasong.ttf');
+} 
+@font-face{
+	font-family:HYQiHei-35S; 
+	src:url('font/HYQiHei-35S.otf');
+} 
 
 html{height:100%} /*兼容firefox的div高度100%*/  
 body{
@@ -17,29 +23,44 @@ h1,h2,h3,h4,h5{
 }
 
 .heading{
-	font-family:heading_CN;
+	font-family:FZFengYaSongS-GB;
 }
 
 .text{
-	font-family:text_CN;
+	font-family:HYQiHei-35S;
 }
-div.left{ position:absolute; left:50px; height:100%;z-index:1;}  
-div.right{margin-left:200px; height:100%;z-index:-1;} 
+div.left{position:absolute; left:50px; height:100%;z-index:1;}  
+div.right{margin-left:200px; height:100%;margin-right:250px;z-index:-1;} 
 div.content{
-	width:80%;
 	background:#FFFF99;
-	float:left;
 	opacity:0.79;
 	border-top:2px solid #fd7b01;
 	text-align:center;
 	z-index:-10;
+	padding-bottom:20px;
 }
 
 div.blog{
-	width:12%;
+	background:#FFFFFF;
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	padding:10px;
 	border-radius: 5px;
 }
-
+div.foot{
+	margin-left:200px;
+	margin-right:250px;
+	padding-top:20px;
+	padding-bottom:50px;
+	color:#fd7b01;
+	font-family:HYQiHei-35S;
+}
+table{
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+}
 .circle{
 	margin:0 auto;
 	margin-top:30px;
@@ -48,5 +69,10 @@ div.blog{
 	border-radius:50%;
 	border:3px solid #fd7b01;
 }
-
-
+a{text-decoration:none} 
+.link{
+	font-family:HYQiHei-35S;
+	font-size:12px;
+	margin-top:10px;
+	padding-right:30px;
+}
