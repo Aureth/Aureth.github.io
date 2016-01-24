@@ -1,4 +1,4 @@
-@font-face {font-family:heading_CN; src: url('font/方正风雅宋简体.ttf');} 
+@font-face {font-family:heading_CN; src: url('font/FZfengyasong.ttf');} 
 @font-face {font-family:text_CN; src: url('font/HYQiHei-35S.otf');} 
 
 html{height:100%} /*兼容firefox的div高度100%*/  
@@ -23,8 +23,8 @@ h1,h2,h3,h4,h5{
 .text{
 	font-family:text_CN;
 }
-.left{ position:absolute; left:50px; height:100%;z-index:1;}  
-.right{margin-left:200px; height:100%;z-index:-1;} 
+div.left{ position:absolute; left:50px; height:100%;z-index:1;}  
+div.right{margin-left:200px; height:100%;z-index:-1;} 
 div.content{
 	width:80%;
 	background:#FFFF99;
@@ -47,5 +47,6 @@ div.blog{
 	width:150px;
 	border-radius:50%;
 	border:3px solid #fd7b01;
-	
 }
+
+
