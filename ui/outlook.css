@@ -1,0 +1,51 @@
+@font-face {font-family:heading_CN; src: url('font/方正风雅宋简体.ttf');} 
+@font-face {font-family:text_CN; src: url('font/HYQiHei-35S.otf');} 
+
+html{height:100%} /*兼容firefox的div高度100%*/  
+body{
+	background-image: url(bg.png); 
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	text-align: center;
+	margin:0; 
+	height:100%;
+}
+
+h1,h2,h3,h4,h5{
+    color: #290a59;
+}
+
+.heading{
+	font-family:heading_CN;
+}
+
+.text{
+	font-family:text_CN;
+}
+.left{ position:absolute; left:50px; height:100%;z-index:1;}  
+.right{margin-left:200px; height:100%;z-index:-1;} 
+div.content{
+	width:80%;
+	background:#FFFF99;
+	float:left;
+	opacity:0.79;
+	border-top:2px solid #fd7b01;
+	text-align:center;
+	z-index:-10;
+}
+
+div.blog{
+	width:12%;
+	border-radius: 5px;
+}
+
+.circle{
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	width:150px;
+	border-radius:50%;
+	border:3px solid #fd7b01;
+	
+}
