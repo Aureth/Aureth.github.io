@@ -9,7 +9,7 @@
 
 html{height:100%} /*兼容firefox的div高度100%*/  
 body{
-	background-image: url(bg.png); 
+	background-color:#290a59;
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -17,7 +17,11 @@ body{
 	margin:0; 
 	height:100%;
 }
-
+@media screen and (min-width: 600px) { 
+	body{
+		background-image: url(bg.png);  
+	} 
+}
 h1,h2,h3,h4,h5{
     color: #290a59;
 }
@@ -29,38 +33,73 @@ h1,h2,h3,h4,h5{
 .text{
 	font-family:HYQiHei-35S;
 }
-div.left{position:absolute; left:50px; height:100%;z-index:1;}  
-div.right{margin-left:200px; height:100%;margin-right:250px;z-index:-1;} 
+@media screen and (min-width: 0){
+.headimg{margin-top:45px; margin-bottom:15px; width:65%; margin-right:15%;}
+div.left{position:absolute; left:0; top:0; width:100%;z-index:10;}  
+div.right{margin-left:10%; height:100%;margin-right:10%;z-index:-1;} 
+}
+@media screen and (min-width: 800px) {
+.headimg{margin-top:15px; margin-bottom:15px; width:50%; margin-right:25%;}
+div.left{position:absolute; top:180px; left:50px; height:100%;z-index:1;}  
+div.right{margin-left:200px; height:100%;margin-right:15%;z-index:-1;} 
+}
 div.content{
-	background:#FFFF99;
+	background:#FFEEBB;
 	opacity:0.79;
 	border-top:2px solid #fd7b01;
 	text-align:center;
 	z-index:-10;
 	padding-bottom:20px;
+	font-family:HYQiHei-35S;
 }
-
+div.blogbox{
+	text-align:center;
+	margin-top:20px;
+}
+@media screen and (min-width: 0){
+.blogbox{height:380px;}
+}
+@media screen and (min-width: 600px) { 
+.blogbox{height:350px;} 
+}
+@media screen and (min-width: 800px) { 
+.blogbox{height:200px;} 
+} 
 div.blog{
 	background:#FFFFFF;
-	width:80%;
-	margin:0 auto;
 	text-align:center;
-	padding:10px;
-	border-radius: 5px;
+	padding:1%;
+	border-radius: 3px;
+	font-family:HYQiHei-35S;
+	overflow:hidden;
+	float:left;
+	margin-left:2%;
+	margin-top:1%;
+	margin-bottom:1%;
 }
+@media screen and (min-width: 0){
+.blog{
+	width:94%;
+	height:80px;
+}
+}
+@media screen and (min-width: 600px) { 
+.blog{width:45%;
+	height:160px;} 
+}
+@media screen and (min-width: 800px) { 
+.blog{width:20.5%;
+	height:160px;} 
+} 
+
 div.foot{
-	margin-left:200px;
-	margin-right:250px;
+	text-align:center;
 	padding-top:20px;
-	padding-bottom:50px;
+	margin-bottom:500px;
 	color:#fd7b01;
 	font-family:HYQiHei-35S;
 }
-table{
-	width:90%;
-	margin:0 auto;
-	text-align:center;
-}
+
 .circle{
 	margin:0 auto;
 	margin-top:30px;
@@ -69,10 +108,16 @@ table{
 	border-radius:50%;
 	border:3px solid #fd7b01;
 }
-a{text-decoration:none} 
-.link{
+a.nav{
+	text-decoration:none; 
+	color:#fd7b01;
+	font-family:FZFengYaSongS-GB; 
+} 
+a.nav:active{
+	color:#711859;
+}
+a.link{
+	color:#290a59;
 	font-family:HYQiHei-35S;
-	font-size:12px;
-	margin-top:10px;
 	padding-right:30px;
 }

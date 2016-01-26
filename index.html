@@ -1,18 +1,19 @@
 <html>
 <head>
-	<link type="text/css" href="ui/nav.css" rel="stylesheet" />
-	<link type="text/css" href="ui/outlook.css" rel="stylesheet"/>
-	<title>Aureth - Personal Page</title>
+<link type="text/css" href="ui/nav.css" rel="stylesheet" />
+<link type="text/css" href="ui/outlook.css" rel="stylesheet"/>
+
+<title>Aureth - Personal Page</title>
 </head>
 <body>
-<div align="center"><img src="ui/self.png" width="50%" style="margin-top:15px"></img></div>
-<div style="margin-top:15px; margin-bottom:50px;">
-	<div class="left">
+<div align="right"><img src="ui/self.png" class="headimg" ></img></div>
+<div style="margin-bottom:50px;" id="main">
+	<div id="nav" class="left">
 		<ul>
-			<li><a href="#introduction">自我介绍</a></li>
-			<li id="nav_active"><a href="#work">学习项目</a></li>
-			<li><a href="#blog">我的日志</a><li>
-			<li><a href="#contact">联系方式</a></li>
+			<li id="introductionli"><a class="nav" href="#introduction">自我介绍</a></li>
+			<li id="workli"><a class="nav" href="#work">学习项目</a></li>
+			<li id="blogli"><a class="nav" href="#blog">我的日志</a>
+			<li id="contactli"><a class="nav" href="#contact">联系方式</a></li>
 		</ul>
 	</div>
 	<div class="right">
@@ -21,67 +22,49 @@
 			<div> <img src="ui/headimg.png" class="circle"></div>
 		</div>
 		<div class="content" id="work">
-			<div class="guide" align="center"><p style="margin-top:-30px;line-height:30px;color:#290a59">学习项目</p></div> 
-			<table>
-				<tr>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-				</tr>
-			</table>
-			<div align="right"><a class="link" href="work.html">>>更多</a></div>
+			<div class="guide" align="center" ><p style="margin-top:-30px;line-height:30px;color:#290a59">学习项目</p></div> 
+			<div align="right" style="margin-top:-20px"><a class="link" href="work.html">更多</a></div>
+			<div class="blogbox">			
+				<div class="blog" style="margin-left:1.75%">
+					vnnowanfe
+				</div>
+				<div class="blog">
+					vnnowanfe
+				</div> 
+				<div class="blog">
+					vnnowanfe
+				</div> 
+				<div class="blog" style="margin-right:1.75%">
+					vnnowanfe
+				</div>
+			</div>
 		</div>
 		<div class="content" id="blog">
 			<div class="guide" align="center"><p style="margin-top:-30px;line-height:30px;color:#290a59">我的日志</p></div> 
-			<table>
-				<tr>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-					<td>
-						<div class="blog">
-							vnnowanfe
-						</div> 
-					</td>
-				</tr>
-			</table>
-			<div align="right"><a class="link" href="blogpage.html">>>更多</a></div>
+			<div align="right" style="margin-top:-20px;"><a class="link" href="bloghome.html">更多</a></div>
+			<div align="center" class="blogbox">			
+				<div class="blog" style="margin-left:1.75%">
+					vnnowanfe
+				</div>
+				<div class="blog">
+					vnnowanfe
+				</div> 
+				<div class="blog">
+					vnnowanfe
+				</div> 
+				<div class="blog" style="margin-right:1.75%">
+					vnnowanfe
+				</div> 
+			</div>
 		</div>
 		<div class="content" id="contact">
 			<div class="guide" align="center"><p style="margin-top:-30px;line-height:30px;color:#290a59">联系方式</p></div> 
 			<p class="text"> fucking html</p>
 		</div>
+		<div class="foot"><a class="nav" href="#top">Back to Top</a></div>
 	</div>
 </div>
-<div class="foot"> Personal Page of Aureth </div>
+<script type="text/javascript" src="ui/mov.js"></script>
+
 </body>
 </html>
