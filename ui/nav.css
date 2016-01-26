@@ -1,4 +1,4 @@
-@media (device-aspect-ratio > 0.8){
+@media (device-aspect-ratio < 0.8){
 ul{
 	width:100%;
 	font-family:FZFengYaSongS-GB;
@@ -223,7 +223,7 @@ div.guide{
 	height:30px;
 	line-height:0px;
 }
-@media (device-aspect-ratio > 0.8){
+@media (device-aspect-ratio < 0.8){
 .tag{
 	display:none;}
 }

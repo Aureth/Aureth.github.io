@@ -61,7 +61,7 @@ div.blogbox{
 	text-align:center;
 	margin-top:20px;
 }
-@media only handheld{
+@media (device-aspect-ratio > 0.8){
 .blogbox{height:380px;}
 }
 @media only screen and (min-width: 0){
@@ -85,7 +85,7 @@ div.blog{
 	margin-top:1%;
 	margin-bottom:1%;
 }
-@media only handheld{
+@media (device-aspect-ratio > 0.8){
 .blog{
 	width:94%;
 	height:80px;}
