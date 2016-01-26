@@ -38,11 +38,3 @@ document.body.onscroll = function(event) {
 	}
 };
 
- obj.addEventListener("touchstart",function(){
-        sTime = new Date().getTime();
-        init.sx = event.targetTouches[0].pageX;
-        init.sy = event.targetTouches[0].pageY;
-        init.ex = init.sx;
-        init.ey = init.sy;
-        if(type.indexOf("start") != -1) func();
-    }, false);

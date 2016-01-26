@@ -1,10 +1,18 @@
-    function addClass(obj, cls) {
-        obj.className += " " + cls;
-    }
-    function removeClass(obj, cls) {
-        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-        obj.className = obj.className.replace(reg, " ");
-    }
+function hasClass(ele,cls) { 
+return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)')); 
+} 
+
+function addClass(ele,cls) { 
+if (!this.hasClass(ele,cls)) ele.className += " "+cls; 
+} 
+
+function removeClass(ele,cls) { 
+if (hasClass(ele,cls)) { 
+var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)'); 
+ele.className=ele.className.replace(reg,' '); 
+} 
+} 
+
 document.getElementById("main").offsetParent= document.body;
 document.getElementById("introduction").offsetParent= document.body;
 document.getElementById("work").offsetParent= document.body;
