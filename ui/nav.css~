@@ -223,6 +223,11 @@ div.guide{
 	height:30px;
 	line-height:0px;
 }
+@media handheld{
+.tag{
+	display:none;}
+}
+}
 @media screen and (min-width: 0px){
 .tag{
 	display:none;}

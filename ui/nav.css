@@ -38,7 +38,7 @@ li.active:hover{
 	background-color:#290a59;
 }
 }
-@media screen and (min-width: 0){
+@media only screen and (min-width: 0){
 ul{
 	width:100%;
 	font-family:FZFengYaSongS-GB;
@@ -78,7 +78,7 @@ li.active:hover{
 	background-color:#290a59;
 }
 }
-@media screen and (min-width: 800px) { 
+@media only screen and (min-width: 800px) { 
 ul{
 	font-family:FZFengYaSongS-GB;
 	position:fixed;
@@ -223,16 +223,16 @@ div.guide{
 	height:30px;
 	line-height:0px;
 }
-@media handheld{
+@media only handheld{
 .tag{
 	display:none;}
 }
 }
-@media screen and (min-width: 0px){
+@media only screen and (min-width: 0px){
 .tag{
 	display:none;}
 }
-@media screen and (min-width: 800px) { 
+@media only screen and (min-width: 800px) { 
 .tag{
 	display:block;
 	width:130px;

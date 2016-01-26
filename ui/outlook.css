@@ -17,7 +17,7 @@ body{
 	margin:0; 
 	height:100%;
 }
-@media screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) { 
 	body{
 		background-image: url(bg.png);  
 	} 
@@ -33,17 +33,17 @@ h1,h2,h3,h4,h5{
 .text{
 	font-family:HYQiHei-35S;
 }
-@media handheld{
+@media only handheld{
 .headimg{margin-top:45px; margin-bottom:15px; width:65%; margin-right:15%;}
 div.left{position:absolute; left:0; top:0; width:100%;z-index:10;}  
 div.right{margin-left:10%; height:100%;margin-right:10%;z-index:-1;} 
 }
-@media screen and (min-width: 0){
+@media only screen and (min-width: 0){
 .headimg{margin-top:45px; margin-bottom:15px; width:65%; margin-right:15%;}
 div.left{position:absolute; left:0; top:0; width:100%;z-index:10;}  
 div.right{margin-left:10%; height:100%;margin-right:10%;z-index:-1;} 
 }
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
 .headimg{margin-top:15px; margin-bottom:15px; width:50%; margin-right:25%;}
 div.left{position:absolute; top:180px; left:50px; height:100%;z-index:1;}  
 div.right{margin-left:200px; height:100%;margin-right:15%;z-index:-1;} 
@@ -61,16 +61,16 @@ div.blogbox{
 	text-align:center;
 	margin-top:20px;
 }
-@media handheld{
+@media only handheld{
 .blogbox{height:380px;}
 }
-@media screen and (min-width: 0){
+@media only screen and (min-width: 0){
 .blogbox{height:380px;}
 }
-@media screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) { 
 .blogbox{height:350px;} 
 }
-@media screen and (min-width: 800px) { 
+@media only screen and (min-width: 800px) { 
 .blogbox{height:200px;} 
 } 
 div.blog{
@@ -85,19 +85,17 @@ div.blog{
 	margin-top:1%;
 	margin-bottom:1%;
 }
-@media handheld{
+@media only handheld{
 .blog{
 	width:94%;
-	height:80px;
+	height:80px;}
 }
-}
-@media screen and (min-width: 0){
+@media only screen and (min-width: 0){
 .blog{
 	width:94%;
-	height:80px;
+	height:80px;}
 }
-}
-@media screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) { 
 .blog{width:45%;
 	height:160px;} 
 }
