@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5{
 .text{
 	font-family:HYQiHei-35S;
 }
-@media only handheld{
+@media (device-aspect-ratio > 0.8)	{
 .headimg{margin-top:45px; margin-bottom:15px; width:65%; margin-right:15%;}
 div.left{position:absolute; left:0; top:0; width:100%;z-index:10;}  
 div.right{margin-left:10%; height:100%;margin-right:10%;z-index:-1;} 
